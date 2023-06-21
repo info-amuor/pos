@@ -1,9 +1,18 @@
 let userArr=[];
+let customerArr=[];
 class User {
     constructor(fullName,email,password) {
         this.fullName=fullName;
         this.email=email;
         this.password=password;
+    }
+}
+class Customer{
+    constructor(name,address,salary,nic) {
+        this.name=name;
+        this.address=address;
+        this.salary=salary;
+        this.nic=nic;
     }
 }
 
@@ -44,6 +53,17 @@ const login=()=>{
         alert('User email not found');
     }
 }
+
+/*Customer*/
+
+const createCustomer=()=>{}
+const findCustomer=(id)=>{}
+const updateCustomer=(id)=>{}
+const deleteCustomer=(id)=>{}
+const getAllCustomers=()=>{}
+
+/*Customer*/
+
 
 /**/
 
