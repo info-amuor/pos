@@ -16,6 +16,8 @@ const createUser=()=>{
     const email=$('#register-email').val();
     const password=$('#register-password').val();
 
+    const hash = bcrypt.hashSync(password,bcrypt.genSaltSync(10));
+    console.log(hash)
     let createdUser=new User(fullName,email,password);
     let existsUserData=userArr.find(e=>e.email===email);
     if (existsUserData){
